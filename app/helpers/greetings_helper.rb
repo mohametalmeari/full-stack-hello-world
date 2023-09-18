@@ -1,2 +1,3 @@
 module GreetingsHelper
 end
+return
