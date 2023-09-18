@@ -1,2 +1,3 @@
 module RootHelper
 end
+return
