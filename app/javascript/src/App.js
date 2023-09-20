@@ -1,7 +1,19 @@
-import React from "react"
+import React from 'react'
+import { Provider } from 'react-redux'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Greetings from './Greeting'
+import store from './store/store'
 
-const App = () => (
-  <h1>Hello World!</h1>
-);
+function App() {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Greetings />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
+  );
+}
 
 export default App;
