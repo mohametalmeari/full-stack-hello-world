@@ -1,0 +1,3 @@
+module GreetingsHelper
+end
+return
